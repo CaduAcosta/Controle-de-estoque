@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque - PROBAJÉ SEMENTES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Imagens decorativas nos cantos -->
+    <img src="logo-bioconsult.jpg" alt="Decorativa Esquerda" class="corner-img left">
+    <img src="corner-right.png" alt="Decorativa Direita" class="corner-img right">
+
+    <div class="header">
+        <!-- Logo centralizado -->
+        <img src="probaje.jpg" alt="Logo ProbaJé Sementes" class="logo">
+        <h1>PROBAJÉ SEMENTES</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="product-list-container">
+            <h2>Produtos no Estoque</h2>
+            <ul id="productList"></ul>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="header-form">
+            <h1>Controle de Estoque</h1>
+        </div>
+        <div class="form">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" placeholder="Digite o nome do produto">
+
+            <label for="productQuantity">Quantidade:</label>
+            <input type="number" id="productQuantity" placeholder="Digite a quantidade">
+
+            <button id="addButton">
+             Adicionar Produto
+            </button>
+            <button id="removeButton">
+             Remover Produto
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

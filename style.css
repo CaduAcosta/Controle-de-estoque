@@ -1,0 +1,154 @@
+/* Resetando margens e paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative; /* Necessário para posicionar as imagens nos cantos */
+}
+
+/* Imagens nos cantos da página */
+.corner-img {
+  position: absolute;
+  width: 100px; /* Ajuste o tamanho das imagens de canto */
+  height: auto;
+  opacity: 0.5; /* Torna as imagens menos chamativas */
+}
+
+.corner-img.left {
+  top: 0;
+  left: 0;
+}
+
+.corner-img.right {
+  top: 0;
+  right: 0;
+}
+
+/* Cabeçalho com o nome da empresa, agora menor e centralizado */
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4CAF50; /* Verde para destacar */
+}
+
+.logo {
+  width: 150px; /* Ajuste o tamanho da logo */
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Contêiner principal para os produtos */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Área de produtos no estoque */
+.product-list-container {
+  width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f0f0f0;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Área de formulário de entrada/saída */
+.form-container {
+  width: 80%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.header-form h1 {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para as imagens nos botões */
+.button-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
